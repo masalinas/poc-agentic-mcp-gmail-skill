@@ -30,6 +30,7 @@ Por favor, indícame si deseas ver más detalles sobre alguno de estos correos.
 
 ## Secuence Diagram
 
+```bash
 User            main-mcp.py (Cliente)               gws_mcp_server.py (Servidor)      CLI / Gmail
   |                         |                                     |                         |
   |--- python main-mcp.py ->|                                     |                         |
@@ -58,3 +59,4 @@ User            main-mcp.py (Cliente)               gws_mcp_server.py (Servidor)
   |                         |-- [Qwen lee Output y redacta]       |                         |
   |<-- Muestra resultado ---|                                     |                         |
   |                         |                                     |                         |
+  ```
