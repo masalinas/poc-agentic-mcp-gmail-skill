@@ -1,0 +1,15 @@
+FROM ubuntu:24.04
+
+# Evitar que la instalación se quede pausada esperando inputs
+ARG DEBIAN_FRONTEND=noninteractive
+
+# Instalar Node.js y NPM desde los repositorios nativos de Ubuntu 24.04
+RUN apt-get update && apt-get install -y \
+    nodejs \
+    npm \
+    && rm -rf /var/lib/apt/lists/*
+
+# Instalar la CLI de Google Workspace
+RUN npm install -g @googleworkspace/cli
+
+ENTRYPOINT ["gws"]
