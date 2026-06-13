@@ -60,3 +60,9 @@ User            main-mcp.py (Cliente)               gws_mcp_server.py (Servidor)
   |<-- Muestra resultado ---|                                     |                         |
   |                         |                                     |                         |
   ```
+
+  ## Requirements
+  - The PoC use the ollama model: qwen2.5:7b
+  - You must have gws CLI installed (Google Worlspace CLI) in your operator system.
+  - You must create a app and active the API Gmail and add a test client to use it.
+  - You must login using gws and select this app with the credentials to read emails from the selected test account.
